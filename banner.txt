@@ -2,32 +2,32 @@ clear
 
 #logo
 figlet king sudda | lolcat
-echo -e$r"                            tool by king sudda"
+echo -e"                          $rtool by king sudda"
 
 #banner
-echo -e $g" king sudda banner name ?"
+echo -e "$gking sudda banner name ?"
 read varking
 echo
 
 #cowsay
-echo -e $g"king sudda your name ?"
+echo -e "$gking sudda your name ?"
 read varsudda
 echo
 
-echo "clear" > clear.txt
-echo "cowsay .f eyes "varsudda" | lolcat " > cowsay.txt
-echo "figlet "$varsudda" | lolcat" > kingsudda.txt
+	echo "clear" > clear.sh
+echo "cowsay .f eyes "varsudda" | lolcat " > cowsay.sh
+echo "figlet "$varsudda" | lolcat" > kingsudda.sh
 
 rm -rf /data/data/com.termux/files/usr/ect/zshrc
 cp zchrc /data/data/com.termux/files/usr/ect
 
-cat "clear.txt" >>/data/data/com.termux/files/usr/ect/zshrc
-cat "cowsay.txt" >>/data/data/com.termux/files/usr/ect/zshrc
-cat "kingsudda.txt" >>/data/data/com.termux/files/usr/ect/zshrc
+cat "clear.sh" >>/data/data/com.termux/files/usr/ect/zshrc
+cat "cowsay.sh" >>/data/data/com.termux/files/usr/ect/zshrc
+cat "kingsudda.sh" >>/data/data/com.termux/files/usr/ect/zshrc
 
-rm -rf clear.txt
-rm -rf cowsay.txt
-rm -rf kingsudda.txt
+rm -rf clear.sh
+rm -rf cowsay.sh
+rm -rf kingsudda.sh
 
 figlet Finish | lolcat
 figlet king sudda | lolcat
